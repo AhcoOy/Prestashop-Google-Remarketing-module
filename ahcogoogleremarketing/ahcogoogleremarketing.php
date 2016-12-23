@@ -42,37 +42,36 @@ class ahcogoogleremarketing extends Module {
     /**
      * Required. This is the product ID of the product or products displayed on the current page - 
      * the IDs used here should match the IDs in your GMC feed.
-      This parameter should be passed when the ecomm_pagetype is product or cart.
+     * This parameter should be passed when the ecomm_pagetype is product or cart.
      * On product pages you will generally have a single product 
      * and so a simple single literal value can be passed; 
      * on cart pages if there is more than one product shown (i.e. if the user has more than one product in their cart) 
      * then an array of values can be passed.
-      Both numeric and alphanumeric values are supported,
+     * Both numeric and alphanumeric values are supported,
      * for example 34592212, '23423-131-12', or 'gp232123-19a', 
      * please note that if your product ID is anything other than a number, 
      * then you will need to treat it as a string and surround it in quotes.
-      Example usage on a single product page:
-      var google_tag_params = {
-      ecomm_prodid: 34592212
-      };
-      Example usage on a cart page with more than on product
-      var google_tag_params = {
-      ecomm_prodid: [34592212, '23423-131-12', 'gp232123-19a']
-      };
+     * Example usage on a single product page:
+     * var google_tag_params = {
+     * ecomm_prodid: 34592212
+     * };
+     * Example usage on a cart page with more than on product
+     * var google_tag_params = {
+     * ecomm_prodid: [34592212, '23423-131-12', 'gp232123-19a']
+     * };
      * 
      */
     protected $ecomm_prodid = null;
 
     /**
      * Indicates the type of page that the tag is on. Valid values:
-
-      home Used on the home page or landing page of your site.
-      searchresults Used on pages where the results of a user's search are displayed.
-      category Used on pages that list multiple items within a category, for example a page showing all shoes in a given style.
-      product Used on individual product pages.
-      cart Used on the cart/basket/checkout page.
-      purchase Used on the page shown once a user has purchased (and so converted), for example a "Thank You" or confirmation page.
-      other Used where the page does not fit into the other types of page, for example a "Contact Us" or "About Us" page.
+     * home Used on the home page or landing page of your site.
+     * searchresults Used on pages where the results of a user's search are displayed.
+     * category Used on pages that list multiple items within a category, for example a page showing all shoes in a given style.
+     * product Used on individual product pages.
+     * cart Used on the cart/basket/checkout page.
+     * purchase Used on the page shown once a user has purchased (and so converted), for example a "Thank You" or confirmation page.
+     * other Used where the page does not fit into the other types of page, for example a "Contact Us" or "About Us" page.
      * @var type 
      */
     protected $ecomm_pagetype = 'other';
@@ -95,12 +94,11 @@ class ahcogoogleremarketing extends Module {
 
     /**
      * This parameter contains a string specifying the category of the currently viewed product or category pages. The string can be any value and does not need to conform to any specific naming convention.
-
-      Example usage for a product on in the "Home & Garden" category
-
-      var google_tag_params = {
-      ecomm_category: 'Home & Garden'
-      };
+     * Example usage for a product on in the "Home & Garden" category
+     *
+     *      var google_tag_params = {
+     *           ecomm_category: 'Home & Garden'
+     *     };
      * @var type 
      */
     protected $ecomm_category = null;
