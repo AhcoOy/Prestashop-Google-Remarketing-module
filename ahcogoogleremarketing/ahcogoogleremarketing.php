@@ -77,18 +77,18 @@ class ahcogoogleremarketing extends Module {
     protected $ecomm_pagetype = 'other';
 
     /**
-      This parameter should be used on product, cart and purchase page types and should contain the value of a single product on product pages, or the total sum of the values of one or more products on the cart and purchase pages. The value should be passed as a javascript Number and should not include any currency symbols.
-      Example usage on a product page where the product has a value of $9.99:
-      var google_tag_params = {
-      ecomm_totalvalue: 9.99
-      };
-      Example usage on the cart or purchase pages where the user's cart contains 3 products with individual values of $29.99, $50.00, and $9.99:
-      var google_tag_params = {
-      ecomm_totalvalue: 89.98
-      };
-      Decimal values should be provided where appropriate. When passing integer values the decimal portion can be safely ignored.
-      Example usage for a basket where the sum of the products is $110.00:
-     * * @var type
+     * This parameter should be used on product, cart and purchase page types and should contain the value of a single product on product pages, or the total sum of the values of one or more products on the cart and purchase pages. The value should be passed as a javascript Number and should not include any currency symbols.
+     * Example usage on a product page where the product has a value of $9.99:
+     * var google_tag_params = {
+     * ecomm_totalvalue: 9.99
+     * };
+     * Example usage on the cart or purchase pages where the user's cart contains 3 products with individual values of $29.99, $50.00, and $9.99:
+     * var google_tag_params = {
+     * ecomm_totalvalue: 89.98
+     * };
+     * Decimal values should be provided where appropriate. When passing integer values the decimal portion can be safely ignored.
+     * Example usage for a basket where the sum of the products is $110.00:
+     *  @var type
      */
     protected $ecomm_totalvalue = null;
 
